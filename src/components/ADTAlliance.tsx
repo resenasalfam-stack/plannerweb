@@ -1,5 +1,6 @@
-import { Scale, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import adtLogo from "@/assets/logos/adt-logo.png";
 
 const ADTAlliance = () => {
   return (
@@ -9,8 +10,12 @@ const ADTAlliance = () => {
           <div className="bg-card rounded-3xl shadow-medium p-8 md:p-12 border border-border">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
-                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-accent/10 text-accent">
-                  <Scale className="w-12 h-12" />
+                <div className="inline-flex items-center justify-center p-4">
+                  <img 
+                    src={adtLogo} 
+                    alt="Logo ADT Estudio Jurídico" 
+                    className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                  />
                 </div>
               </div>
               

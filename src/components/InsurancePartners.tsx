@@ -3,22 +3,33 @@ import sancorLogo from "@/assets/logos/sancor-seguros.svg";
 import providenciaLogo from "@/assets/logos/providencia.svg";
 import integrityLogo from "@/assets/logos/integrity.svg";
 import nacionLogo from "@/assets/logos/nacion-seguros.svg";
+import federacionLogo from "@/assets/logos/federacion-patronal.png";
+import galiciaLogo from "@/assets/logos/galicia-seguros.png";
+import provinciaLogo from "@/assets/logos/provincia-seguros.png";
+import atmLogo from "@/assets/logos/atm-seguros.png";
+import sanPatricioLogo from "@/assets/logos/san-patricio.png";
+import sanCristobalLogo from "@/assets/logos/san-cristobal.png";
+import zurichLogo from "@/assets/logos/zurich.png";
+import allianzLogo from "@/assets/logos/allianz.png";
+import agrosaltaLogo from "@/assets/logos/agrosalta.png";
+import cruzSuizaLogo from "@/assets/logos/cruz-suiza.png";
+import mercantilAndinaLogo from "@/assets/logos/mercantil-andina.png";
 
 const partners = [
-  { name: "Federación Patronal", logo: null },
-  { name: "Galicia Seguros", logo: null },
+  { name: "Federación Patronal", logo: federacionLogo },
+  { name: "Galicia Seguros", logo: galiciaLogo },
   { name: "Sancor Seguros", logo: sancorLogo },
-  { name: "Provincia Seguros", logo: null },
-  { name: "ATM", logo: null },
-  { name: "San Patricio", logo: null },
-  { name: "San Cristóbal", logo: null },
-  { name: "Zurich", logo: null },
-  { name: "Allianz", logo: null },
+  { name: "Provincia Seguros", logo: provinciaLogo },
+  { name: "ATM", logo: atmLogo },
+  { name: "San Patricio", logo: sanPatricioLogo },
+  { name: "San Cristóbal", logo: sanCristobalLogo },
+  { name: "Zurich", logo: zurichLogo },
+  { name: "Allianz", logo: allianzLogo },
   { name: "Providencia", logo: providenciaLogo },
-  { name: "Agrosalta", logo: null },
-  { name: "Cruz Suiza", logo: null },
+  { name: "Agrosalta", logo: agrosaltaLogo },
+  { name: "Cruz Suiza", logo: cruzSuizaLogo },
   { name: "Integrity", logo: integrityLogo },
-  { name: "Mercantil Andina", logo: null },
+  { name: "Mercantil Andina", logo: mercantilAndinaLogo },
   { name: "Nación Seguros", logo: nacionLogo },
 ];
 
@@ -42,19 +53,14 @@ const InsurancePartners = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-smooth hover:border-primary/30"
+              className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-all duration-300 hover:border-primary/30 hover:scale-105"
             >
-              {partner.logo ? (
-                <img 
-                  src={partner.logo} 
-                  alt={`Logo ${partner.name}`}
-                  className="max-h-12 w-auto object-contain"
-                />
-              ) : (
-                <span className="text-center font-medium text-sm text-foreground">
-                  {partner.name}
-                </span>
-              )}
+              <img 
+                src={partner.logo} 
+                alt={`Logo de ${partner.name}`}
+                className="max-h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
