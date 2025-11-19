@@ -1,0 +1,583 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KRNC6DC');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta name="description" />
+    <meta name="google-site-verification" content="3Ttm2t8_31nyJ3zssPt2Ac3TrazPOHmE-1pVamIc2A4" />
+    <script type="text/javascript" src="/ruxitagentjs_ICANVfgqru_10325251103172537.js" data-dtconfig="rid=RID_-21515504|rpid=1093123965|domain=sancorseguros.com.ar|reportUrl=/rb_bf93063ads|app=087432b35a093ac5|cuc=i8ip1m78|owasp=1|mel=100000|featureHash=ICANVfgqru|dpvc=1|lastModification=1763135772364|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfgqru_10325251103172537.js"></script><link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://natalfwk.gruposancorseguros.com/nf-institucional/3.0.2/modern/nfi-ss.css" />
+    <script type="module" src="https://natalfwk.gruposancorseguros.com/nf-institucional/3.0.2/modern/nfi.esm.js"></script>
+   
+
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"Organization","url":"https://wwww.sancorseguros.com.ar","logo":"https://www.sancorseguros.com.ar/logo.svg","name":"Sancor Seguros","legalName":"Sancor Cooperativa de Seguros Ltda.","sameAs":{"Value":"[\"https://wa.me/5493493510404\",\"https://www.facebook.com/sancorseguros/\",\"https://www.instagram.com/sancorsegurosar/\",\"https://ar.linkedin.com/company/grupo-sancor-seguros\",\"https://www.youtube.com/user/canalsancorseguros\"]"},"description":"Nacida en Sunchales, Santa Fe, en 1945, Sancor Cooperativa de Seguros Ltda. dio origen al Grupo Asegurador Sancor Seguros. Con Casa Central en Sunchales, se ha expandido a todo Argentina, Uruguay, Paraguay, Brasil y Colombia, liderando el mercado asegurador no solo en facturación, sino también en seguridad, prevención, transparencia e imagen."}
+    </script>
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRNC6DC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+        <nf-chat data-site-code="1001"></nf-chat>
+
+        <!-- El menu va afuera de todo para que funcione el sticky -->
+        <div class="mb-3 sticky-top">
+            <nf-menu data-props='{"logo":{"name":"Sancor Seguros","src":"/logo.svg","href":"/","alt":"Logo Sancor Seguros","width":null,"height":"34"},"sideMenu":{"link":null,"label":"Menu","class":"btn-outline-secondary","icon":"fa-bars"},"action":{"link":"https://autogestion.sancorseguros.com.ar","label":"Ingresar","class":"btn-outline-secondary","icon":"fa-solid fa-arrow-right"},"i18n":{"more":"Mas"},"links":[{"label":"Seguros","icon":"/SSA/icons/menu-mobile/seguros.svg","href":null,"titleAttr":null,"relAttr":null,"targetAttr":null,"links":[{"label":"Seguro para Autos","icon":null,"href":"/auto","titleAttr":"Seguro para Autos","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro para Hogar","icon":null,"href":"/personas/hogar","titleAttr":"Seguro para Hogar","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro para Motos","icon":null,"href":"/personas/moto","titleAttr":"Seguro para Motos","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro de Movilidad","icon":null,"href":"/personas/movilidad","titleAttr":"Seguro de Movilidad","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro de Vida","icon":null,"href":"/personas/vida","titleAttr":"Seguro de Vida","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro de Vida con Capitalizaci\u00F3n","icon":null,"href":"/personas/vida/capitalizacion","titleAttr":"Seguro de Vida con Capitalizaci\u00F3n","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro de Accidentes Personales","icon":null,"href":"/personas/accidentes-personales","titleAttr":"Seguro de Accidentes Personales","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro de Salud","icon":null,"href":"/personas/salud","titleAttr":"Seguro de Salud","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro para Embarcaciones","icon":null,"href":"/personas/embarcacion","titleAttr":"Seguro para Embarcaciones","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Seguro de Tecnolog\u00EDa","icon":null,"href":"/personas/tecnologia","titleAttr":"Seguro de Tecnolog\u00EDa","relAttr":"nofollow","targetAttr":"_self","links":null}]},{"label":"Siniestros","icon":"/SSA/icons/menu-mobile/siniestros.svg","href":null,"titleAttr":null,"relAttr":null,"targetAttr":null,"links":[{"label":"Soy asegurado","icon":null,"href":"/siniestros/soy-asegurado","titleAttr":"Soy asegurado","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Soy tercero","icon":null,"href":"/siniestros/soy-tercero","titleAttr":"Soy tercero","relAttr":"nofollow","targetAttr":"_self","links":null}]},{"label":"Autogesti\u00F3n","icon":"/SSA/icons/menu-mobile/autogestion.svg","href":null,"titleAttr":null,"relAttr":null,"targetAttr":null,"links":[{"label":"Ingresar","icon":null,"href":"https://autogestion.sancorseguros.com.ar","titleAttr":"Ingresar","relAttr":"nofollow","targetAttr":"_blank","links":null},{"label":"\u00BFQu\u00E9 puedo hacer?","icon":null,"href":"/autogestion","titleAttr":"\u00BFQu\u00E9 puedo hacer?","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Descarga de documentos","icon":null,"href":"/descarga-de-documentos","titleAttr":"Descarga de documentos","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Beneficia","icon":null,"href":"/beneficia","titleAttr":"Beneficia","relAttr":"nofollow","targetAttr":"_self","links":null}]},{"label":"Institucional","icon":"/SSA/icons/menu-mobile/institucional.svg","href":null,"titleAttr":null,"relAttr":null,"targetAttr":null,"links":[{"label":"Sobre nosotros","icon":null,"href":"/sobre-nosotros","titleAttr":"Sobre nosotros","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"\u00BFPor qu\u00E9 elegirnos?","icon":null,"href":"/sobre-nosotros#por-que-elegirnos","titleAttr":"\u00BFPor qu\u00E9 elegirnos?","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Blog Mundo Seguro","icon":null,"href":"/blog","titleAttr":"Blog Mundo Seguro","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Trabaj\u00E1 con nosotros","icon":null,"href":"/trabaja-con-nosotros","titleAttr":"Trabaj\u00E1 con nosotros","relAttr":"nofollow","targetAttr":"_self","links":null}]},{"label":"Contacto","icon":"/SSA/icons/menu-mobile/contacto.svg","href":null,"titleAttr":null,"relAttr":null,"targetAttr":null,"links":[{"label":"N\u00FAmeros \u00FAtiles","icon":null,"href":"/contacto","titleAttr":"N\u00FAmeros \u00FAtiles","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Formulario de contacto","icon":null,"href":"/contacto#formulario-de-contacto","titleAttr":"Formulario de contacto","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Mapa de Oficinas","icon":null,"href":"/contacto#mapa-de-oficinas","titleAttr":"Mapa de Oficinas","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Mapa PAS","icon":"fa-map","href":"/mapa-pas","titleAttr":null,"relAttr":null,"targetAttr":"_self","links":null}]},{"label":"Beneficios","icon":"/SSA/icons/12-Institucional/descuentos-especiales.svg","href":"/beneficios","titleAttr":"Beneficios por ser cliente","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Productor Asesor","icon":"/SSA/icons/menu-mobile/productor-asesor.svg","href":"/pas","titleAttr":"Productor Asesor","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Preguntas Frecuentes","icon":"/SSA/icons/menu-mobile/preguntas-frecuentes.svg","href":"/preguntas-frecuentes","titleAttr":"Preguntas Frecuentes","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Prestadores M\u00E9dicos","icon":"/SSA/icons/menu-mobile/prestadores-medicos.svg","href":"/prestadores-medicos","titleAttr":"Prestadores M\u00E9dicos","relAttr":"nofollow","targetAttr":"_self","links":null},{"label":"Farmacias y Vadem\u00E9cum","icon":"/SSA/icons/menu-mobile/farmacias-vademecum.svg","href":"/farmacias-vademecum","titleAttr":"Farmacias y Vadem\u00E9cum","relAttr":"nofollow","targetAttr":"_self","links":null}],"type":"secondary"}'>
+                <div slot="footer">
+                    <a href="https://api.whatsapp.com/send?phone=5493493510404" target="_blank">
+                        <svg class="pe-2 d-none d-lg-block mb-2" viewBox="-0.003 -293.41895027729095 1172.923 1474.5159502772908" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" width="40">
+                            <path d="M308.678 1021.49l19.153 9.576a499.739 499.739 0 0 0 258.244 70.227c279.729-.638 509.563-231.016 509.563-510.744 0-135.187-53.692-265.012-149.169-360.713-95.35-96.69-225.62-151.18-361.383-151.18-278.451 0-507.552 229.133-507.552 507.552 0 2.203 0 4.373.032 6.576a523.81 523.81 0 0 0 76.612 268.14l12.768 19.153-51.074 188.337 192.806-46.925z" fill="#00E676" fill-rule="nonzero" />
+                            <path d="M1003.29 172.378C894.597 61.482 745.49-.732 590.225 0h-.99C269.479.001 6.35 263.131 6.35 582.888c0 1.5.032 2.969.032 4.47a616.759 616.759 0 0 0 76.612 290.485L-.003 1181.097l309.32-79.804a569.202 569.202 0 0 0 278.993 70.228c320.939-1.756 584.036-266.385 583.844-587.356.766-154.213-60.044-302.52-168.864-411.787m-413.065 900.186a473.935 473.935 0 0 1-245.476-67.035l-19.153-9.577-184.187 47.883 47.882-181.953-12.768-19.153a484.242 484.242 0 0 1-72.558-254.957c0-265.65 218.599-484.25 484.25-484.25 265.65 0 484.248 218.6 484.248 484.25 0 167.269-86.666 323.11-228.781 411.372a464.838 464.838 0 0 1-251.86 73.42m280.59-354.329l-35.114-15.96s-51.075-22.346-82.996-38.306c-3.192 0-6.384-3.192-9.577-3.192a46.308 46.308 0 0 0-22.345 6.384c-6.799 3.99-3.192 3.192-47.882 54.266-3.032 5.97-9.257 9.705-15.96 9.577h-3.193a24.328 24.328 0 0 1-12.768-6.384l-15.961-6.385a309.91 309.91 0 0 1-92.573-60.65c-6.384-6.385-15.96-12.77-22.345-19.154a357.13 357.13 0 0 1-60.65-76.611l-3.193-6.384a46.475 46.475 0 0 1-6.384-12.769 23.915 23.915 0 0 1 3.192-15.96c2.905-4.789 12.769-15.962 22.345-25.538 9.577-9.576 9.577-15.96 15.961-22.345a39.33 39.33 0 0 0 6.384-31.922 1246.398 1246.398 0 0 0-51.074-121.301 37.099 37.099 0 0 0-22.345-15.961H380.82c-6.384 0-12.768 3.192-19.153 3.192l-3.192 3.192c-6.384 3.192-12.768 9.577-19.153 12.769-6.384 3.192-9.576 12.769-15.96 19.153a162.752 162.752 0 0 0-35.114 98.956 189.029 189.029 0 0 0 15.96 73.42l3.193 9.576a532.111 532.111 0 0 0 118.11 162.8l12.768 12.769a193.037 193.037 0 0 1 25.537 25.537c66.141 57.554 144.7 99.052 229.516 121.302 9.576 3.192 22.345 3.192 31.921 6.384h31.922a118.126 118.126 0 0 0 47.882-12.769c7.82-3.543 15.29-7.82 22.345-12.768l6.384-6.385c6.385-6.384 12.769-9.576 19.153-15.96a84.393 84.393 0 0 0 15.961-19.153c6.129-14.301 10.438-29.304 12.769-44.69V724.62a40.107 40.107 0 0 0-9.577-6.385" fill="#fff" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div slot="toolbar">
+                    <div class="container-fluid">
+                        <div class="row bg-white">
+                            <div class="col col-lg-6 m-auto px-4 mb-2">
+                                <nf-profile-selector data-items='["Personas", "Empresas", "Agro"]'
+                                                 data-active="Personas"></nf-profile-selector>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nf-menu>
+        </div>
+
+    <div id="content" class="mb-3">
+        
+<section class="container">
+    <div class="container-fluid py-5 text-center">
+        <img src="/resources/server-error.svg" alt="Server no encontrado" />
+        <h2 class=" fw-bold">Lo sentimos pero esta página no existe</h2>
+        <p class="fs-5">Para continuar navegando volvé a la página de inicio.</p>
+        <a href="/" class="btn btn-secondary">Volver al incio</a>
+    </div>
+</section>
+    </div>
+
+    <nf-modal id="regretFormModal" data-title="Solicitud de arrepentimiento o baja">
+    <div slot="body">
+        <p>Exclusivo si contrataste en forma online</p>
+        <div class="my-3">
+            <form id="regretForm">
+                <div class="mb-3">
+                    <label for="ramification" class="form-label">Producto Contratado</label>
+                    <div class="form-group mb-3">
+                        <nf-autocomplete name="ramification"
+                                         id="ramification"
+                                         :data-source="ramificationSource"
+                                         data-minimum-input-length="0"
+                                         data-has-search="false"
+                                         data-fv-not-empty="true">
+                        </nf-autocomplete>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">Fecha de Contratación</label>
+                    <input type="date"
+                           name="hireDate"
+                           id="hireDate"
+                           class="form-control"
+                            max="9999-12-31"    
+                         />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="numberReference" class="form-label">Nro. de referencia</label>
+                    <input class="form-control"
+                           type="text"
+                           name="numberReference"
+                           id="numberReference"                          
+                           data-fv-regexp="true"
+                           data-fv-regexp___regexp="^[0-9]{1,15}$"
+                           data-fv-regexp___message="Solo se permiten números (máximo 15 dígitos)"
+                           maxlength="15"
+                           
+                           />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="name" class="form-label">Nombre y Apellido</label>
+                    <input class="form-control"
+                           name="name"
+                           id="name"
+                           data-fv-not-empty="true" />
+                </div>
+                <div class="mb-3">
+                    <label for="docType" class="form-label">Tipo y Número de Documento</label>
+                    <div class="row">
+                        <div class="form-group mb-3 col-lg-4">
+                            <nf-autocomplete name="documentType"
+                                             id="docType"
+                                             value="{'id': 'DNI', 'text': 'DNI'}"
+                                             :data-source="docTypeSource"
+                                             data-minimum-input-length="0"
+                                             data-has-search="false"
+                                             data-fv-not-empty="true">
+                            </nf-autocomplete>
+                        </div>
+                        <div class="form-group col-lg-8">
+                            <input class="form-control"
+                                   type="text"
+                                   name="documentNumber"
+                                   id="docNumber"
+                                   data-fv-not-empty="true"
+                                   data-fv-not-empty___message="Por favor ingresá un valor"
+                                   data-fv-regexp="true"
+                                   data-fv-regexp___regexp="^[0-9]{1,8}$"
+                                   data-fv-regexp___message="Solo se permiten números (máximo 8 dígitos)"
+                                   maxlength="8" />
+                        </div>
+                        <div id="errorDNI">
+                           
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input class="form-control"
+                           type="email"
+                           name="email"
+                           id="email"
+                           data-fv-email-address="true"
+                           data-fv-email-address___require-global-domain="true"
+                           data-fv-not-empty="true" />
+                </div>
+
+               
+                <div class="row">
+                    <div class="form-group mb-3 col-4">
+                        <label for="areaCode" class="form-label">Cod Área</label>
+                        <input class="form-control"
+                               type="text"
+                               name="areaCode"
+                               id="areaCode"
+                               data-fv-not-empty="true"
+                                data-fv-regexp="true"
+                           data-fv-regexp___regexp="^[0-9]{1,5}$"
+                           data-fv-regexp___message="Solo se permiten números (máximo 5 dígitos)"
+                           maxlength="5"
+                               />
+                    </div>
+                    <div class="form-group mb-3 col-8">
+                        <label for="telephone" class="form-label">Número</label>
+                        <input class="form-control"
+                               type="text"
+                               name="phoneNumber"
+                               id="telephone"
+                               data-fv-not-empty="true"
+                               data-fv-regexp="true"
+                           data-fv-regexp___regexp="^[0-9]{1,15}$"
+                           data-fv-regexp___message="Solo se permiten números (máximo 15 dígitos)"
+                           maxlength="15"
+                               
+                               />
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="description" class="form-label">Motivo</label>
+                    <textarea class="form-control"
+                              name="description"
+                              id="description"
+                              data-fv-not-empty="true"></textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="mb-2">Tildá este campo para continuar</label>
+                    <nf-recaptcha></nf-recaptcha>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div slot="footer" class="w-100 text-center">
+        <button type='button' class='btn btn-link me-5' onclick="closeRegretForm()">Cancelar</button>
+        <button type='button' class='btn btn-secondary' onclick="submitRegretForm()">Solicitar  <i class="fa fa-arrow-right btn-icon"></i></button>
+    </div>
+</nf-modal>
+
+<script type="module">
+    globalThis.dataLayer = globalThis.dataLayer || [];
+
+        function isHireDateValid() {
+       
+                const input = document.getElementById('hireDate');
+    const value = input.value;
+    if (!value) return false;
+
+    const selectedDate = new Date(value);
+    const today = new Date();
+    today.setHours(0,0,0,0);
+
+    // Solo validar que la fecha no sea después de hoy
+    return selectedDate <= today;
+
+    }
+
+    const form = document.querySelector(`#regretForm`);
+
+    NFI.Validation.init(form);
+
+    window.openRegretForm = function () {
+        document.querySelector(`#regretFormModal`).modal.show()
+    }
+
+    window.closeRegretForm = function () {
+        document.querySelector(`#regretFormModal`).modal.hide()
+    }
+
+    window.submitRegretForm = async function () {
+        const form = document.querySelector(`#regretForm`);
+        
+        
+    // Validación de fecha usando la función isHireDateValid
+    // if (!isHireDateValid()) {
+    //     NFI.Notification.show({
+    //         type: "danger",
+    //         title: "Solicitud de arrepentimiento",
+    //         content: "No se puede elegir una fecha mayor al día de hoy",
+    //         delay: 5000,
+    //         autohide: true,
+    //     });
+
+    //     return; // Detener la ejecución aquí
+    // }
+        
+        
+        
+        const fd = new FormData(form);
+        const currentFormData = Object.fromEntries(fd);
+
+
+
+
+
+        const isValid = await NFI.Validation.validate(form);
+
+
+
+
+        if (isValid != "Valid") {
+            globalThis.dataLayer.push({
+                'event': 'contactoFormulario',
+                'resultado': 'errorUsuario'
+            });
+
+            return;
+        }
+
+        NFI.BlockUI.block({
+            element: "#regretForm",
+        });
+
+        const recaptchaToken = currentFormData["g-recaptcha-response"]
+        delete currentFormData["g-recaptcha-response"]
+
+        const data = {
+            name: currentFormData.name,
+            numberReference: currentFormData.numberReference,
+            hireDate: currentFormData.hireDate,
+            documentType: currentFormData.documentType,
+            documentNumber: currentFormData.documentNumber,
+            description: `Ramo:  ${currentFormData.ramification}  \nNro de Referencia:   ${currentFormData.numberReference}  \nFecha de Contratación:   ${currentFormData.hireDate} \nMotivo:  ${currentFormData.description}  `,
+            phoneNumber: `${currentFormData.areaCode} ${currentFormData.phoneNumber}`,
+            email: currentFormData.email,
+            ramification: currentFormData.ramification,
+            recaptchaToken: recaptchaToken
+        };
+
+        const resp = await fetch("/api/send-regret-request", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+
+        console.log(resp);
+
+        if (resp.ok) {
+               const responseData = await resp.json();
+            const regretRequestCode = responseData.data?.regretRequestCode || "N/A";
+
+            console.log(regretRequestCode);
+            
+           
+            let respMessage = `su número de gestión es: ${regretRequestCode}`;
+
+
+            NFI.Notification.show({
+                type: "success",
+                title: "Solicitud de arrepentimiento",
+                content:   respMessage,
+                delay: 5000,
+                autohide: true,
+            });
+
+            document.querySelector(`#regretFormModal`).modal.hide();
+
+            NFI.Validation.reset(form, true);
+        } else {
+            NFI.Notification.show({
+                type: "danger",
+                title: "Solicitud de arrepentimiento",
+                content: "Ocurrió un error. Por favor intente más tarde",
+                delay: 5000,
+                autohide: true,
+            });
+        }
+
+        globalThis.dataLayer.push({
+            'event': 'contactoFormulario',
+            'resultado': resp.ok ? 'OK' : 'errorServidor'
+        });
+
+        NFI.BlockUI.unblock({
+            element: "#regretForm",
+        });
+    }
+
+
+
+  
+
+    NFI({
+        ramificationSource: [
+            { id: "AP", text: "Accidentes Personales" },
+            { id: "Robo", text: "Robo" },
+            { id: "Hogar", text: "Hogar" },
+            { id: "SSMax", text: "Salud Segura Max" },
+            { id: "MovilidadUrbana", text: "Movilidad Urbana" },
+            { id: "Tecnología", text:"Tecnología"}
+        ],
+        docTypeSource: [
+            { id: "DNI", text: "DNI" },
+            { id: "CI", text: "CI" },
+            { id: "LC", text: "LC" },
+            { id: "LE", text: "LE" }
+        ]
+    }, "#regretForm")
+</script>
+
+    <footer class="my-4">
+    <div class="container">
+        <div class="row bg-gray-100 g-0 rounded-4 overflow-hidden flex-lg-row mb-4 shadow-sm h-lg-250 position-relative">
+            <div class="col p-4 flex flex-column position static">
+                <div class="row mb-5">
+                    <div class="col">
+                        <img loading="lazy" src="https://corporate-site-content.gruposancorseguros.com/SSA/Content/marca-GSS.svg"
+                             alt="Grupo Sancor Seguros"
+                             width="246" height="48">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 d-flex gap-3 ">
+                        <ul class="nav flex-column justify-content-between"
+                            role="list">
+                            <li class="nav-item mb-4">
+                                <a href="/politicas-de-privacidad"
+                                   class="small">Políticas de privacidad</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="small" href="/SSA/footer/OLA/Guia_Informativa_y_formularios_OLA.pdf" target="_blank">Obligación legal autónoma</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="small" href="/prevencion-lavado-de-activos">Prevención del<br /> lavado de Activos</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="small" href="/prevencion-de-fraude">Prevención de fraudes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 d-flex gap-3">
+                        <ul class="nav flex-column justify-content-between"
+                            role="list">
+                            <li class="nav-item mb-4">
+                                <a href="/trabaja-con-nosotros"
+                                   class="small">Trabajá con nosotros</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="small" href="https://www.sancorseguros.com.ar/hotsale">HotSale</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="small" href="https://www.sancorseguros.com.ar/cybermonday">CyberMonday</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="small" href="https://www.sancorseguros.com.ar/verano">Verano</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 d-flex gap-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-4">
+                                <a class="small small pointer" onclick="openRegretForm()">Solicitud de baja y arrepentimiento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <small class="text-secondary me-3"><strong>Seguinos:</strong> </small>
+                        <a class="me-2" href="https://www.facebook.com/sancorseguros/" target="_blank" rel="nofollow">
+                            <img loading="lazy"
+                                 src="/SSA/icons/1-Todo/logo-footer-fb.svg"
+                                 alt="Logo de Facebook en el pie de página" width="24" height="24">
+                        </a>
+                        <a class="me-2" href="https://www.instagram.com/accounts/login/?next=/sancorsegurosar/" target="_blank"
+                           rel="nofollow">
+                            <img loading="lazy"
+                                 src="/SSA/icons/1-Todo/logo-footer-ig.svg"
+                                 alt="Logo de Instagram en el pie de página" width="24" height="24">
+                        </a>
+                        <a class="me-2" href="https://www.linkedin.com/authwall?sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsancor-coop-de-seguros-ltda"
+                           target="_blank" rel="nofollow">
+                            <img loading="lazy"
+                                 src="/SSA/icons/1-Todo/logo-footer-in.svg"
+                                 alt="Logo de LinkedIn en el pie de página" width="24" height="24">
+                        </a>
+                        <a href="https://www.youtube.com/user/canalsancorseguros" target="_blank" rel="nofollow">
+                            <img loading="lazy" src="/SSA/icons/1-Todo/logo-footer-yt.svg" alt="Logo de YouTube en el pie de página" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img loading="lazy" class="img-fluid" loading="lazy-loading" width="374" height="480" alt="Imagen del pie de página de Sancor Seguros" src="/SSA/footer/imagen_footer.jpg" />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-3 text-center position-relative">
+                <p class="small m-0">N° de Inscripción de SSN</p>
+                <p class="small m-0">0224</p>
+                <div class="position-absolute top-0 bottom-0 end-0 border-gray border-end border visibility d-none d-lg-block"></div>
+            </div>
+            <div class="col-lg-3 text-center  position-relative">
+                <p class="small m-0">Atención al asegurado</p>
+                <p class="small">0800-666-8400</p>
+                <div class="position-absolute top-0 bottom-0 end-0 border-gray border-end border visibility d-none d-lg-block"></div>
+            </div>
+
+            <div class="col-lg-3 text-center position-relative">
+                <p class="small m-0">Organismo de control</p>
+                <p class="small m-0 text-truncate">www.argentina.gob.ar/ssn</p>
+                <div class="position-absolute top-0 bottom-0 end-0 border-gray border-end border visibility d-none d-lg-block"></div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <img loading="lazy" class="img-fluid" src="/SSA/icons/1-Todo/logo-ssn.svg" alt="Logo de SSN Data">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-xs-12">
+                <div class="bg-gray-200 p-3">
+                    <p class="small">
+                        La entidad aseguradora dispone de un Servicio de Atención al Asegurado que atenderá las consultas y reclamos que presenten los tomadores de seguros, asegurados, beneficiarios y/o derechohabientes.
+                        
+                    </p>
+                    <p class="small">
+                        RESPONSABLE: Calle, Graciela<br />
+                        SUPLENTE: Barolo, Mariela<br />
+                        TELÉFONO/INTERNO: 03493-428500 - 53120<br />
+                        CORREO ELECTRÓNICO: SAA@sancorseguros.com<br />
+                        Nº DE INSCRIPCIÓN DE LA COMPAÑÍA ANTE LA SSN: 0224<br />
+                    </p>
+                    <p class="small">
+                        En caso de reclamo ante la entidad aseguradora no resuelto o desestimado, podrá denunciarlo a través de www.argentina.gob.ar/ssn.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="text-center mt-3">
+                    <a href="http://qr.afip.gob.ar/?qr=rKUA9TMch82os_-teqJUQQ,," target="_blank">
+                        <img loading="lazy" src="/SSA/footer/data-fiscal.png" alt="Imagen de datos fiscales" height="45">
+                    </a>
+                    <a href="/SSA/footer/aaip.jpg">
+                        <img loading="lazy" src="https://corporate-site-content.gruposancorseguros.com/SSA/Content/logo-PDP.jpg" alt="Imagen de AAIP (Administración Federal de Ingresos Públicos)"
+                             width="37" height="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script type="module">
+        // NFI.Utils.loadGTM("GTM-KRNC6DC");
+
+        const $profileSelector = document.querySelector('nf-profile-selector');
+        const $menu = document.querySelector('nf-menu');
+
+        const paths = {
+            agro: 'Agro',
+            empresas: 'Company',
+            personas: 'Person'
+        };
+
+        $menu.addEventListener('profile-selector:change', (e) => {
+            const profile = e.detail.toLowerCase()
+
+            let url = '/api/sections/information?path=/' + profile;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(seoInformation => {
+                    document.title = seoInformation.data.title;
+                    document.querySelector('meta[name="description"]').setAttribute("content", seoInformation.data.metaDescription);
+                })
+                
+            loadProfileSection(profile)
+            loadMenu(profile)
+        });
+
+        function loadMenu(profile) {
+            let url = '/api/menu?clientProfile=' + paths[profile];
+
+            fetch(url)
+                .then(response => response.text())
+                .then(menuItems => $menu.setAttribute('data-props', menuItems))
+        }
+
+        function loadProfileSection(profile) {
+            let url = '/Home/GetClientProfileSection?clientProfile=' + paths[profile];
+
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    history.pushState({}, "", `/${profile}`)
+
+                    const html = document.createRange().createContextualFragment(data);
+                    document.getElementById('content').innerHTML = "";
+                    document.getElementById('content').append(html);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                })
+                .catch(error => {
+                    console.error('Error al cargar el perfil:', error);
+                });
+        }
+    </script>
+
+    
+</body>
+</html>

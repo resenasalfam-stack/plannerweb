@@ -1,21 +1,25 @@
 import { Shield } from "lucide-react";
+import sancorLogo from "@/assets/logos/sancor-seguros.svg";
+import providenciaLogo from "@/assets/logos/providencia.svg";
+import integrityLogo from "@/assets/logos/integrity.svg";
+import nacionLogo from "@/assets/logos/nacion-seguros.svg";
 
 const partners = [
-  "Federación Patronal",
-  "Galicia Seguros",
-  "Sancor Seguros",
-  "Provincia Seguros",
-  "ATM",
-  "San Patricio",
-  "San Cristóbal",
-  "Zurich",
-  "Allianz",
-  "Providencia",
-  "Agrosalta",
-  "Cruz Suiza",
-  "Integrity",
-  "Mercantil Andina",
-  "Nación Seguros",
+  { name: "Federación Patronal", logo: null },
+  { name: "Galicia Seguros", logo: null },
+  { name: "Sancor Seguros", logo: sancorLogo },
+  { name: "Provincia Seguros", logo: null },
+  { name: "ATM", logo: null },
+  { name: "San Patricio", logo: null },
+  { name: "San Cristóbal", logo: null },
+  { name: "Zurich", logo: null },
+  { name: "Allianz", logo: null },
+  { name: "Providencia", logo: providenciaLogo },
+  { name: "Agrosalta", logo: null },
+  { name: "Cruz Suiza", logo: null },
+  { name: "Integrity", logo: integrityLogo },
+  { name: "Mercantil Andina", logo: null },
+  { name: "Nación Seguros", logo: nacionLogo },
 ];
 
 const InsurancePartners = () => {
@@ -38,11 +42,19 @@ const InsurancePartners = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:shadow-soft transition-smooth hover:border-primary/30"
+              className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-smooth hover:border-primary/30"
             >
-              <span className="text-center font-medium text-sm text-foreground">
-                {partner}
-              </span>
+              {partner.logo ? (
+                <img 
+                  src={partner.logo} 
+                  alt={`Logo ${partner.name}`}
+                  className="max-h-12 w-auto object-contain"
+                />
+              ) : (
+                <span className="text-center font-medium text-sm text-foreground">
+                  {partner.name}
+                </span>
+              )}
             </div>
           ))}
         </div>
