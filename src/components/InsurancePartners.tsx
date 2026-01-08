@@ -58,7 +58,7 @@ const InsurancePartners = () => {
               <img 
                 src={partner.logo} 
                 alt={`Logo de ${partner.name}`}
-                className="max-h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="max-h-14 w-auto object-contain transition-all duration-300"
                 loading="lazy"
               />
             </div>
