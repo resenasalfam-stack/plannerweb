@@ -12,10 +12,10 @@ const Footer = () => {
             <img 
               src={logoPlanner} 
               alt="Planner Organización de Seguros" 
-              className="h-12 mb-4 brightness-0 invert"
+              className="h-20 mb-4 brightness-0 invert"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Parte de Alfam Group Holding. Soluciones integrales en seguros con respaldo jurídico ADT.
+              Soluciones integrales en seguros con respaldo jurídico ADT.
             </p>
           </div>
 
@@ -100,11 +100,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/70">
-          <p className="mb-2">
-            © {currentYear} Planner Organización de Seguros – Alfam Group Holding
-          </p>
-          <p className="text-xs">
-            CUIT: [Número de CUIT] | <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
+          <p>
+            © {currentYear} Planner Organización de Seguros | <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
           </p>
         </div>
       </div>
