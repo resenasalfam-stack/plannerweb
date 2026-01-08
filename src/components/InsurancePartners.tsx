@@ -1,26 +1,27 @@
 import { Shield } from "lucide-react";
 import sancorLogo from "@/assets/logos/sancor-seguros.svg";
 import providenciaLogo from "@/assets/logos/providencia.svg";
-import integrityLogo from "@/assets/logos/integrity.svg";
+import integrityLogo from "@/assets/logos/integrity.png";
 import nacionLogo from "@/assets/logos/nacion-seguros.svg";
 import federacionLogo from "@/assets/logos/federacion-patronal.png";
 import galiciaLogo from "@/assets/logos/galicia-seguros.png";
 import provinciaLogo from "@/assets/logos/provincia-seguros.png";
-import atmLogo from "@/assets/logos/atm-seguros.png";
+import atmLogo from "@/assets/logos/atm-seguros.webp";
 import sanPatricioLogo from "@/assets/logos/san-patricio.png";
 import sanCristobalLogo from "@/assets/logos/san-cristobal.png";
 import zurichLogo from "@/assets/logos/zurich.png";
 import allianzLogo from "@/assets/logos/allianz.png";
-import agrosaltaLogo from "@/assets/logos/agrosalta.png";
-import cruzSuizaLogo from "@/assets/logos/cruz-suiza.png";
-import mercantilAndinaLogo from "@/assets/logos/mercantil-andina.png";
+import agrosaltaLogo from "@/assets/logos/agrosalta.jpg";
+import cruzSuizaLogo from "@/assets/logos/cruz-suiza.jfif";
+import mercantilAndinaLogo from "@/assets/logos/mercantil-andina.webp";
+import berkleyLogo from "@/assets/logos/berkley.webp";
 
 const partners = [
   { name: "Federación Patronal", logo: federacionLogo },
   { name: "Galicia Seguros", logo: galiciaLogo },
   { name: "Sancor Seguros", logo: sancorLogo },
   { name: "Provincia Seguros", logo: provinciaLogo },
-  { name: "ATM", logo: atmLogo },
+  { name: "ATM Seguros", logo: atmLogo },
   { name: "San Patricio", logo: sanPatricioLogo },
   { name: "San Cristóbal", logo: sanCristobalLogo },
   { name: "Zurich", logo: zurichLogo },
@@ -31,6 +32,7 @@ const partners = [
   { name: "Integrity", logo: integrityLogo },
   { name: "Mercantil Andina", logo: mercantilAndinaLogo },
   { name: "Nación Seguros", logo: nacionLogo },
+  { name: "Berkley", logo: berkleyLogo },
 ];
 
 const InsurancePartners = () => {
