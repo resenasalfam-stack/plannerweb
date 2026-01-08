@@ -1,13 +1,13 @@
 import { Shield } from "lucide-react";
-import sancorLogo from "@/assets/logos/sancor-seguros.svg";
-import providenciaLogo from "@/assets/logos/providencia.svg";
+import sancorLogo from "@/assets/logos/sancor-seguros.png";
+import providenciaLogo from "@/assets/logos/providencia.png";
 import integrityLogo from "@/assets/logos/integrity.png";
-import nacionLogo from "@/assets/logos/nacion-seguros.svg";
+import nacionLogo from "@/assets/logos/nacion-seguros.png";
 import federacionLogo from "@/assets/logos/federacion-patronal.png";
 import galiciaLogo from "@/assets/logos/galicia-seguros.png";
 import provinciaLogo from "@/assets/logos/provincia-seguros.png";
 import atmLogo from "@/assets/logos/atm-seguros.webp";
-import sanPatricioLogo from "@/assets/logos/san-patricio.png";
+import sanPatricioLogo from "@/assets/logos/san-patricio.jpg";
 import sanCristobalLogo from "@/assets/logos/san-cristobal.png";
 import zurichLogo from "@/assets/logos/zurich.png";
 import allianzLogo from "@/assets/logos/allianz.png";
@@ -15,6 +15,7 @@ import agrosaltaLogo from "@/assets/logos/agrosalta.jpg";
 import cruzSuizaLogo from "@/assets/logos/cruz-suiza.jfif";
 import mercantilAndinaLogo from "@/assets/logos/mercantil-andina.webp";
 import berkleyLogo from "@/assets/logos/berkley.webp";
+import paranaLogo from "@/assets/logos/parana-seguros.jfif";
 
 const partners = [
   { name: "Federación Patronal", logo: federacionLogo },
@@ -33,6 +34,7 @@ const partners = [
   { name: "Mercantil Andina", logo: mercantilAndinaLogo },
   { name: "Nación Seguros", logo: nacionLogo },
   { name: "Berkley", logo: berkleyLogo },
+  { name: "Paraná Seguros", logo: paranaLogo },
 ];
 
 const InsurancePartners = () => {
