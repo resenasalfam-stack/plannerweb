@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import sancorLogo from "@/assets/logos/sancor-seguros.png";
 import providenciaLogo from "@/assets/logos/providencia.png";
@@ -71,7 +73,7 @@ const InsurancePartners = () => {
               stopOnMouseEnter: true,
             }),
           ]}
-          className="w-full"
+          className="w-full relative"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {partners.map((partner, index) => (
@@ -90,6 +92,8 @@ const InsurancePartners = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselPrevious className="left-0 -translate-x-1/2 hidden md:flex" />
+          <CarouselNext className="right-0 translate-x-1/2 hidden md:flex" />
         </Carousel>
       </div>
     </section>
