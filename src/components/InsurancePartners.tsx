@@ -1,4 +1,10 @@
 import { Shield } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import sancorLogo from "@/assets/logos/sancor-seguros.png";
 import providenciaLogo from "@/assets/logos/providencia.png";
 import integrityLogo from "@/assets/logos/integrity.png";
@@ -53,21 +59,38 @@ const InsurancePartners = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-all duration-300 hover:border-primary/30 hover:scale-105"
-            >
-              <img 
-                src={partner.logo} 
-                alt={`Logo de ${partner.name}`}
-                className="max-h-14 w-auto object-contain transition-all duration-300"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: false,
+              stopOnMouseEnter: true,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {partners.map((partner, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
+              >
+                <div className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-all duration-300 hover:border-primary/30 h-24">
+                  <img
+                    src={partner.logo}
+                    alt={`Logo de ${partner.name}`}
+                    className="max-h-14 w-auto object-contain transition-all duration-300"
+                    loading="lazy"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </section>
   );
