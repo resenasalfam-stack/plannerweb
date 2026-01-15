@@ -12,7 +12,7 @@ const Footer = () => {
             <img 
               src={logoPlanner} 
               alt="Planner Organización de Seguros" 
-              className="h-20 mb-4 brightness-0 invert"
+              className="h-24 mb-4 brightness-0 invert"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Soluciones integrales en seguros con respaldo jurídico ADT.
