@@ -92,8 +92,8 @@ const InsurancePartners = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-0 -translate-x-1/2 hidden md:flex" />
-          <CarouselNext className="right-0 translate-x-1/2 hidden md:flex" />
+          <CarouselPrevious className="left-0 -translate-x-1/2" />
+          <CarouselNext className="right-0 translate-x-1/2" />
         </Carousel>
       </div>
     </section>
