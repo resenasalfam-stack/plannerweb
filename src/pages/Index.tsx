@@ -5,6 +5,8 @@ import InsurancePartners from "@/components/InsurancePartners";
 import ADTAlliance from "@/components/ADTAlliance";
 import ProducersSection from "@/components/ProducersSection";
 import AboutSection from "@/components/AboutSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -19,6 +21,8 @@ const Index = () => {
       <ADTAlliance />
       <ProducersSection />
       <AboutSection />
+      <TestimonialsSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
       <WhatsAppButton />

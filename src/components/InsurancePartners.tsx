@@ -15,15 +15,15 @@ import federacionLogo from "@/assets/logos/federacion-patronal.png";
 import galiciaLogo from "@/assets/logos/galicia-seguros.png";
 import provinciaLogo from "@/assets/logos/provincia-seguros.png";
 import atmLogo from "@/assets/logos/atm-seguros.webp";
-import sanPatricioLogo from "@/assets/logos/san-patricio.jpg";
+import sanPatricioLogo from "@/assets/logos/san-patricio.webp";
 import sanCristobalLogo from "@/assets/logos/san-cristobal.png";
 import zurichLogo from "@/assets/logos/zurich.png";
 import allianzLogo from "@/assets/logos/allianz.png";
-import agrosaltaLogo from "@/assets/logos/agrosalta.jpg";
-import cruzSuizaLogo from "@/assets/logos/cruz-suiza.jfif";
+import agrosaltaLogo from "@/assets/logos/agrosalta.webp";
+import cruzSuizaLogo from "@/assets/logos/cruz-suiza.webp";
 import mercantilAndinaLogo from "@/assets/logos/mercantil-andina.webp";
 import berkleyLogo from "@/assets/logos/berkley.webp";
-import paranaLogo from "@/assets/logos/parana-seguros.jfif";
+import paranaLogo from "@/assets/logos/parana-seguros.webp";
 
 const partners = [
   { name: "Federación Patronal", logo: federacionLogo },
