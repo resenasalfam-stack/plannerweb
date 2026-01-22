@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
 
 // Validation schema with security constraints
 const contactSchema = z.object({
@@ -83,7 +84,7 @@ const ContactSection = () => {
     setErrors({ ...errors, [field]: error });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -108,8 +109,28 @@ const ContactSection = () => {
       return;
     }
 
-    // Sanitize and encode data for WhatsApp URL
+    // Sanitize data
     const sanitizedData = result.data;
+
+    // Save lead to database
+    const { error: dbError } = await supabase.from("leads").insert({
+      name: sanitizedData.name,
+      email: sanitizedData.email,
+      phone: sanitizedData.phone,
+      message: `[${sanitizedData.insuranceType}] ${sanitizedData.message}`,
+    });
+
+    if (dbError) {
+      toast({
+        title: "Error al guardar",
+        description: "Hubo un problema al guardar tu consulta. Intentá de nuevo.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Build WhatsApp message
     const whatsappMessage = [
       `Hola, mi nombre es ${sanitizedData.name}`,
       ``,
@@ -127,7 +148,7 @@ const ContactSection = () => {
     
     toast({
       title: "¡Mensaje enviado!",
-      description: "Te redirigimos a WhatsApp para continuar la conversación.",
+      description: "Tu consulta fue guardada. Te redirigimos a WhatsApp.",
     });
     
     setFormData({
