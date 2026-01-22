@@ -11,23 +11,119 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
+import { z } from "zod";
+
+// Validation schema with security constraints
+const contactSchema = z.object({
+  name: z
+    .string()
+    .trim()
+    .min(2, "El nombre debe tener al menos 2 caracteres")
+    .max(100, "El nombre no puede superar 100 caracteres")
+    .regex(/^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$/, "El nombre solo puede contener letras"),
+  email: z
+    .string()
+    .trim()
+    .email("Ingresá un email válido")
+    .max(255, "El email no puede superar 255 caracteres"),
+  phone: z
+    .string()
+    .trim()
+    .min(8, "El teléfono debe tener al menos 8 dígitos")
+    .max(20, "El teléfono no puede superar 20 caracteres")
+    .regex(/^[\d\s\-+()]+$/, "Formato de teléfono inválido"),
+  insuranceType: z
+    .string()
+    .min(1, "Seleccioná un tipo de seguro"),
+  message: z
+    .string()
+    .trim()
+    .min(10, "El mensaje debe tener al menos 10 caracteres")
+    .max(1000, "El mensaje no puede superar 1000 caracteres"),
+});
+
+type ContactFormData = z.infer<typeof contactSchema>;
+
+type FormErrors = Partial<Record<keyof ContactFormData, string>>;
 
 const ContactSection = () => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
     insuranceType: "",
     message: "",
   });
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validateField = (field: keyof ContactFormData, value: string): string | undefined => {
+    try {
+      contactSchema.shape[field].parse(value);
+      return undefined;
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return error.errors[0]?.message;
+      }
+      return "Campo inválido";
+    }
+  };
+
+  const handleChange = (field: keyof ContactFormData, value: string) => {
+    setFormData({ ...formData, [field]: value });
+    // Clear error when user starts typing
+    if (errors[field]) {
+      setErrors({ ...errors, [field]: undefined });
+    }
+  };
+
+  const handleBlur = (field: keyof ContactFormData) => {
+    const error = validateField(field, formData[field]);
+    setErrors({ ...errors, [field]: error });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    // Validate all fields
+    const result = contactSchema.safeParse(formData);
     
-    const whatsappMessage = `Hola, mi nombre es ${formData.name}%0A%0AEmail: ${formData.email}%0ATeléfono: ${formData.phone}%0ATipo de seguro: ${formData.insuranceType}%0A%0AMensaje: ${formData.message}`;
+    if (!result.success) {
+      const fieldErrors: FormErrors = {};
+      result.error.errors.forEach((err) => {
+        const field = err.path[0] as keyof ContactFormData;
+        if (!fieldErrors[field]) {
+          fieldErrors[field] = err.message;
+        }
+      });
+      setErrors(fieldErrors);
+      setIsSubmitting(false);
+      toast({
+        title: "Error en el formulario",
+        description: "Por favor, corregí los campos marcados.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Sanitize and encode data for WhatsApp URL
+    const sanitizedData = result.data;
+    const whatsappMessage = [
+      `Hola, mi nombre es ${sanitizedData.name}`,
+      ``,
+      `Email: ${sanitizedData.email}`,
+      `Teléfono: ${sanitizedData.phone}`,
+      `Tipo de seguro: ${sanitizedData.insuranceType}`,
+      ``,
+      `Mensaje: ${sanitizedData.message}`,
+    ].join('\n');
     
-    window.open(`https://wa.me/5491136808630?text=${whatsappMessage}`, "_blank");
+    // Use encodeURIComponent for proper URL encoding
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    window.open(`https://wa.me/5491136808630?text=${encodedMessage}`, "_blank", "noopener,noreferrer");
     
     toast({
       title: "¡Mensaje enviado!",
@@ -41,6 +137,8 @@ const ContactSection = () => {
       insuranceType: "",
       message: "",
     });
+    setErrors({});
+    setIsSubmitting(false);
   };
 
   return (
@@ -56,16 +154,22 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div>
+        <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Input
                   placeholder="Nombre completo"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  className="h-12"
+                  onChange={(e) => handleChange("name", e.target.value)}
+                  onBlur={() => handleBlur("name")}
+                  maxLength={100}
+                  className={`h-12 ${errors.name ? "border-destructive focus-visible:ring-destructive" : ""}`}
+                  aria-invalid={!!errors.name}
+                  aria-describedby={errors.name ? "name-error" : undefined}
                 />
+                {errors.name && (
+                  <p id="name-error" className="text-sm text-destructive mt-1">{errors.name}</p>
+                )}
               </div>
 
               <div>
@@ -73,10 +177,16 @@ const ContactSection = () => {
                   type="email"
                   placeholder="Email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  className="h-12"
+                  onChange={(e) => handleChange("email", e.target.value)}
+                  onBlur={() => handleBlur("email")}
+                  maxLength={255}
+                  className={`h-12 ${errors.email ? "border-destructive focus-visible:ring-destructive" : ""}`}
+                  aria-invalid={!!errors.email}
+                  aria-describedby={errors.email ? "email-error" : undefined}
                 />
+                {errors.email && (
+                  <p id="email-error" className="text-sm text-destructive mt-1">{errors.email}</p>
+                )}
               </div>
 
               <div>
@@ -84,18 +194,27 @@ const ContactSection = () => {
                   type="tel"
                   placeholder="Teléfono"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  required
-                  className="h-12"
+                  onChange={(e) => handleChange("phone", e.target.value)}
+                  onBlur={() => handleBlur("phone")}
+                  maxLength={20}
+                  className={`h-12 ${errors.phone ? "border-destructive focus-visible:ring-destructive" : ""}`}
+                  aria-invalid={!!errors.phone}
+                  aria-describedby={errors.phone ? "phone-error" : undefined}
                 />
+                {errors.phone && (
+                  <p id="phone-error" className="text-sm text-destructive mt-1">{errors.phone}</p>
+                )}
               </div>
 
               <div>
                 <Select
                   value={formData.insuranceType}
-                  onValueChange={(value) => setFormData({ ...formData, insuranceType: value })}
+                  onValueChange={(value) => handleChange("insuranceType", value)}
                 >
-                  <SelectTrigger className="h-12">
+                  <SelectTrigger 
+                    className={`h-12 ${errors.insuranceType ? "border-destructive focus-visible:ring-destructive" : ""}`}
+                    aria-invalid={!!errors.insuranceType}
+                  >
                     <SelectValue placeholder="Tipo de seguro" />
                   </SelectTrigger>
                   <SelectContent>
@@ -109,21 +228,39 @@ const ContactSection = () => {
                     <SelectItem value="otro">Otro</SelectItem>
                   </SelectContent>
                 </Select>
+                {errors.insuranceType && (
+                  <p className="text-sm text-destructive mt-1">{errors.insuranceType}</p>
+                )}
               </div>
 
               <div>
                 <Textarea
-                  placeholder="Mensaje"
+                  placeholder="Mensaje (mínimo 10 caracteres)"
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
+                  onChange={(e) => handleChange("message", e.target.value)}
+                  onBlur={() => handleBlur("message")}
+                  maxLength={1000}
                   rows={5}
+                  className={errors.message ? "border-destructive focus-visible:ring-destructive" : ""}
+                  aria-invalid={!!errors.message}
+                  aria-describedby={errors.message ? "message-error" : undefined}
                 />
+                {errors.message && (
+                  <p id="message-error" className="text-sm text-destructive mt-1">{errors.message}</p>
+                )}
+                <p className="text-xs text-muted-foreground mt-1 text-right">
+                  {formData.message.length}/1000
+                </p>
               </div>
 
-              <Button type="submit" size="lg" className="w-full shadow-medium text-lg py-6 h-auto">
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="w-full shadow-medium text-lg py-6 h-auto"
+                disabled={isSubmitting}
+              >
                 <Send className="w-5 h-5 mr-2" />
-                Enviar consulta
+                {isSubmitting ? "Enviando..." : "Enviar consulta"}
               </Button>
             </form>
           </div>
