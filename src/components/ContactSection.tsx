@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -13,6 +13,8 @@ import {
 } from "./ui/select";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
+import ScrollReveal from "./ScrollReveal";
+import { motion, useInView } from "framer-motion";
 
 // Validation schema with security constraints
 const contactSchema = z.object({
@@ -162,20 +164,26 @@ const ContactSection = () => {
     setIsSubmitting(false);
   };
 
+  const contactInfoRef = useRef(null);
+  const contactInfoInView = useInView(contactInfoRef, { once: true, margin: "-100px" });
+
   return (
     <section id="contacto" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
-            Contactanos
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Estamos para asesorarte y ayudarte a encontrar la mejor cobertura
-          </p>
-        </div>
+        <ScrollReveal animation="fade-up">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
+              Contactanos
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Estamos para asesorarte y ayudarte a encontrar la mejor cobertura
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        <div>
+          <ScrollReveal animation="fade-right">
+          <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Input
@@ -285,17 +293,14 @@ const ContactSection = () => {
               </Button>
             </form>
           </div>
+          </ScrollReveal>
 
-          <div className="space-y-6">
-            <div className="bg-muted p-6 rounded-2xl border border-border">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-                    <Phone className="w-6 h-6" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">WhatsApp</h3>
+          <div ref={contactInfoRef} className="space-y-6">
+            {[
+              {
+                icon: Phone,
+                title: "WhatsApp",
+                content: (
                   <a 
                     href="https://wa.me/5491136808630" 
                     target="_blank" 
@@ -304,60 +309,55 @@ const ContactSection = () => {
                   >
                     +54 11 3680-8630
                   </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-muted p-6 rounded-2xl border border-border">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-                    <Mail className="w-6 h-6" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Email</h3>
+                ),
+              },
+              {
+                icon: Mail,
+                title: "Email",
+                content: (
                   <a 
                     href="mailto:administracion@plannerseguros.com"
                     className="text-primary hover:underline"
                   >
                     administracion@plannerseguros.com
                   </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-muted p-6 rounded-2xl border border-border">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-                    <MapPin className="w-6 h-6" />
+                ),
+              },
+              {
+                icon: MapPin,
+                title: "Ubicación",
+                content: <p className="text-muted-foreground">Buenos Aires, Argentina</p>,
+              },
+              {
+                icon: Clock,
+                title: "Horario",
+                content: <p className="text-muted-foreground">Lunes a Viernes de 9 a 18 hs</p>,
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                animate={contactInfoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                transition={{
+                  duration: 0.4,
+                  delay: index * 0.1,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+                className="bg-muted p-6 rounded-2xl border border-border"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                      <item.icon className="w-6 h-6" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                    {item.content}
                   </div>
                 </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Ubicación</h3>
-                  <p className="text-muted-foreground">
-                    Buenos Aires, Argentina
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-muted p-6 rounded-2xl border border-border">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-                    <Clock className="w-6 h-6" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Horario</h3>
-                  <p className="text-muted-foreground">
-                    Lunes a Viernes de 9 a 18 hs
-                  </p>
-                </div>
-              </div>
-            </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
