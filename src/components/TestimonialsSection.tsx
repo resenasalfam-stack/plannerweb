@@ -1,9 +1,17 @@
 import { Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import ScrollReveal from "./ScrollReveal";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+
+// Import avatar images
+import martinAvatar from "@/assets/avatars/martin-g.jpg";
+import carolinaAvatar from "@/assets/avatars/carolina-s.jpg";
+import robertoAvatar from "@/assets/avatars/roberto-m.jpg";
+import lauraAvatar from "@/assets/avatars/laura-p.jpg";
+import diegoAvatar from "@/assets/avatars/diego-f.jpg";
+import sofiaAvatar from "@/assets/avatars/sofia-t.jpg";
 
 const testimonials = [
   {
@@ -11,6 +19,7 @@ const testimonials = [
     role: "Cliente - Seguro de Auto",
     content: "Excelente atención y rapidez en la gestión del siniestro. Me solucionaron todo en 48hs. Muy recomendables.",
     initials: "MG",
+    avatar: martinAvatar,
     rating: 5,
   },
   {
@@ -18,6 +27,7 @@ const testimonials = [
     role: "Productora Asociada",
     content: "Desde que me sumé a Planner, mi cartera creció un 40%. El respaldo y las herramientas que brindan son únicos en el mercado.",
     initials: "CS",
+    avatar: carolinaAvatar,
     rating: 5,
   },
   {
@@ -25,6 +35,7 @@ const testimonials = [
     role: "Cliente - Seguro Comercio",
     content: "Encontraron la mejor tarifa del mercado para mi negocio. Muy profesionales y siempre disponibles para consultas.",
     initials: "RM",
+    avatar: robertoAvatar,
     rating: 5,
   },
   {
@@ -32,6 +43,7 @@ const testimonials = [
     role: "Cliente - Seguro de Hogar",
     content: "Me asesoraron de forma clara y sin vueltas. Hoy tengo mi casa protegida con la mejor cobertura al mejor precio.",
     initials: "LP",
+    avatar: lauraAvatar,
     rating: 5,
   },
   {
@@ -39,6 +51,7 @@ const testimonials = [
     role: "Productor Asociado",
     content: "El respaldo jurídico de ADT y las condiciones con las aseguradoras hacen la diferencia. Excelente organización.",
     initials: "DF",
+    avatar: diegoAvatar,
     rating: 5,
   },
   {
@@ -46,6 +59,7 @@ const testimonials = [
     role: "Cliente - Seguro de Moto",
     content: "Contraté mi seguro en minutos por WhatsApp. Cuando tuve un problema, me acompañaron en todo el proceso.",
     initials: "ST",
+    avatar: sofiaAvatar,
     rating: 5,
   },
 ];
@@ -99,7 +113,12 @@ const TestimonialsSection = () => {
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-3">
-                    <Avatar className="h-10 w-10 bg-primary/10">
+                    <Avatar className="h-12 w-12 border-2 border-primary/20">
+                      <AvatarImage 
+                        src={testimonial.avatar} 
+                        alt={`Foto de ${testimonial.name}`}
+                        className="object-cover"
+                      />
                       <AvatarFallback className="bg-primary/10 text-primary font-semibold text-sm">
                         {testimonial.initials}
                       </AvatarFallback>
