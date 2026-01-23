@@ -1,13 +1,22 @@
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import logoPlanner from "@/assets/logo-planner.png";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const footerRef = useRef(null);
+  const isInView = useInView(footerRef, { once: true, margin: "-50px" });
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer ref={footerRef} className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"
+        >
           <div>
             <img 
               src={logoPlanner} 
@@ -97,13 +106,18 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/70">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/70"
+        >
           <p>
             © {currentYear} Planner Organización de Seguros | <a href="#" className="hover:text-primary-foreground transition-smooth">Política de Privacidad</a>
           </p>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

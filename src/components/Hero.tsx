@@ -1,5 +1,6 @@
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,23 +11,48 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm mb-8 animate-pulse">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm mb-8"
+          >
             <Shield className="w-10 h-10 text-white" />
-          </div>
+          </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          >
             Protegemos lo que más valorás
-          </h1>
+          </motion.h1>
           
-          <p className="text-xl md:text-2xl mb-4 text-white/90 font-light">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-xl md:text-2xl mb-4 text-white/90 font-light"
+          >
             Tu seguridad, nuestro compromiso
-          </p>
+          </motion.p>
           
-          <p className="text-lg mb-10 text-white/80 max-w-3xl mx-auto leading-relaxed">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-lg mb-10 text-white/80 max-w-3xl mx-auto leading-relaxed"
+          >
             Planner Organización de Seguros forma parte de <strong>Alfam Group</strong>, un holding empresarial argentino con presencia en seguros, servicios legales, construcción, retail, comercio exterior y consultoría.
-          </p>
+          </motion.p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
             <Button 
               size="lg"
               onClick={() => document.getElementById("seguros")?.scrollIntoView({ behavior: "smooth" })}
@@ -44,7 +70,7 @@ const Hero = () => {
             >
               Contactá un asesor
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
       

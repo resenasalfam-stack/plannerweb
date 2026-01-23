@@ -5,6 +5,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollReveal from "./ScrollReveal";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const faqs = [
   {
@@ -40,36 +43,51 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  const faqRef = useRef(null);
+  const isInView = useInView(faqRef, { once: true, margin: "-100px" });
+
   return (
     <section id="faq" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-4">
-            <HelpCircle className="w-7 h-7" />
+        <ScrollReveal animation="fade-up">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-4">
+              <HelpCircle className="w-7 h-7" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+              Preguntas Frecuentes
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Respondemos las dudas más comunes sobre nuestros servicios
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Preguntas Frecuentes
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Respondemos las dudas más comunes sobre nuestros servicios
-          </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="max-w-3xl mx-auto">
+        <div ref={faqRef} className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem
+              <motion.div
                 key={index}
-                value={`item-${index}`}
-                className="bg-card border border-border rounded-lg px-6 data-[state=open]:shadow-soft transition-all duration-300"
+                initial={{ opacity: 0, x: -30 }}
+                animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+                transition={{
+                  duration: 0.4,
+                  delay: index * 0.1,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
               >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className="bg-card border border-border rounded-lg px-6 data-[state=open]:shadow-soft transition-all duration-300"
+                >
+                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </motion.div>
             ))}
           </Accordion>
         </div>

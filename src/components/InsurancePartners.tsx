@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import ScrollReveal from "./ScrollReveal";
 import sancorLogo from "@/assets/logos/sancor-seguros.png";
 import providenciaLogo from "@/assets/logos/providencia.png";
 import integrityLogo from "@/assets/logos/integrity.png";
@@ -49,52 +50,56 @@ const InsurancePartners = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-4">
-            <Shield className="w-7 h-7" />
+        <ScrollReveal animation="fade-up">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-4">
+              <Shield className="w-7 h-7" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+              Trabajamos con las mejores aseguradoras
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Acceso a múltiples opciones para encontrar la cobertura perfecta para vos
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Trabajamos con las mejores aseguradoras
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Acceso a múltiples opciones para encontrar la cobertura perfecta para vos
-          </p>
-        </div>
+        </ScrollReveal>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 2000,
-              stopOnInteraction: false,
-              stopOnMouseEnter: true,
-            }),
-          ]}
-          className="w-full relative"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {partners.map((partner, index) => (
-              <CarouselItem
-                key={index}
-                className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
-              >
-                <div className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-all duration-300 hover:border-primary/30 h-24">
-                  <img
-                    src={partner.logo}
-                    alt={`Logo de ${partner.name}`}
-                    className="max-h-14 w-auto object-contain transition-all duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-0 -translate-x-1/2" />
-          <CarouselNext className="right-0 translate-x-1/2" />
-        </Carousel>
+        <ScrollReveal animation="fade-up" delay={0.2}>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+              }),
+            ]}
+            className="w-full relative"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {partners.map((partner, index) => (
+                <CarouselItem
+                  key={index}
+                  className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
+                >
+                  <div className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:shadow-soft transition-all duration-300 hover:border-primary/30 h-24">
+                    <img
+                      src={partner.logo}
+                      alt={`Logo de ${partner.name}`}
+                      className="max-h-14 w-auto object-contain transition-all duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0 -translate-x-1/2" />
+            <CarouselNext className="right-0 translate-x-1/2" />
+          </Carousel>
+        </ScrollReveal>
       </div>
     </section>
   );
