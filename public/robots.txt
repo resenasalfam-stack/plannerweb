@@ -22,4 +22,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://plannerseguros.com/sitemap.xml
+Sitemap: https://www.plannerseguros.com/sitemap.xml
