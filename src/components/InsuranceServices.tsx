@@ -97,7 +97,7 @@ const InsuranceServices = () => {
               asChild
               className="shadow-medium text-lg px-8 py-6 h-auto font-semibold"
             >
-              <a href="https://wa.me/5491136808630?text=Hola,%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener noreferrer">
+              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
                 Solicitá cotización personalizada
               </a>
             </Button>
