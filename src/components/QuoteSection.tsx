@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
-import { QUOTE_URL, handleQuoteLinkClick } from "@/lib/quote-link";
+import { QUOTE_URL } from "@/lib/quote-link";
 
 const QuoteSection = () => {
   return (
@@ -37,7 +37,7 @@ const QuoteSection = () => {
             asChild
             className="bg-white text-primary hover:bg-white/90 hover:scale-105 shadow-strong text-lg px-10 py-7 h-auto font-semibold transition-all duration-300 cursor-pointer group"
           >
-            <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer" onClick={handleQuoteLinkClick}>
+            <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer">
               Obtener mi cotización
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
