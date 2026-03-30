@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import InsuranceServices from "@/components/InsuranceServices";
+import QuoteSection from "@/components/QuoteSection";
 import InsurancePartners from "@/components/InsurancePartners";
 import ADTAlliance from "@/components/ADTAlliance";
 import ProducersSection from "@/components/ProducersSection";
@@ -17,6 +18,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <InsuranceServices />
+      <QuoteSection />
       <InsurancePartners />
       <ADTAlliance />
       <ProducersSection />
