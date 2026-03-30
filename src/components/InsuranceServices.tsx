@@ -4,6 +4,7 @@ import { Card, CardContent } from "./ui/card";
 import ScrollReveal from "./ScrollReveal";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { QUOTE_URL, handleQuoteLinkClick } from "@/lib/quote-link";
 
 const services = [
   {
@@ -97,7 +98,7 @@ const InsuranceServices = () => {
               asChild
               className="shadow-medium text-lg px-8 py-6 h-auto font-semibold cursor-pointer"
             >
-              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+              <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer" onClick={handleQuoteLinkClick}>
                 Solicitá cotización personalizada
               </a>
             </Button>
