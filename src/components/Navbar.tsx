@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import logoPlanner from "@/assets/logo-planner.png";
+import { QUOTE_URL, handleQuoteLinkClick } from "@/lib/quote-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

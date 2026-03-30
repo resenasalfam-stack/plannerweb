@@ -4,6 +4,7 @@ import { Card, CardContent } from "./ui/card";
 import ScrollReveal from "./ScrollReveal";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { QUOTE_URL, handleQuoteLinkClick } from "@/lib/quote-link";
 
 const services = [
   {

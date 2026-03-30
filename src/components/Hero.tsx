@@ -1,6 +1,7 @@
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
+import { QUOTE_URL, handleQuoteLinkClick } from "@/lib/quote-link";
 
 const Hero = () => {
   return (
