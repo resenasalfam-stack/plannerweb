@@ -42,10 +42,12 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("contacto")} className="text-foreground hover:text-primary transition-smooth font-medium">
               Contacto
             </button>
-            <Button asChild variant="default" className="shadow-medium bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base px-6 animate-pulse hover:animate-none">
-              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
-                🛡️ Cotizá tu seguro
-              </a>
+            <Button 
+              variant="default" 
+              onClick={() => window.open("https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/", "_blank")}
+              className="shadow-medium bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base px-6 animate-pulse hover:animate-none cursor-pointer"
+            >
+              🛡️ Cotizá tu seguro
             </Button>
           </div>
 
@@ -76,10 +78,12 @@ const Navbar = () => {
               <button onClick={() => scrollToSection("contacto")} className="text-foreground hover:text-primary transition-smooth font-medium">
                 Contacto
               </button>
-              <Button asChild variant="default" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base">
-                <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
-                  🛡️ Cotizá tu seguro
-                </a>
+              <Button 
+                variant="default" 
+                onClick={() => window.open("https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/", "_blank")}
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base cursor-pointer"
+              >
+                🛡️ Cotizá tu seguro
               </Button>
             </div>
           </div>
