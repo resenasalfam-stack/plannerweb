@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import logoPlanner from "@/assets/logo-planner.png";
-import { QUOTE_URL, handleQuoteLinkClick } from "@/lib/quote-link";
+import { QUOTE_URL } from "@/lib/quote-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
               asChild
               className="shadow-medium bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base px-6 animate-pulse hover:animate-none cursor-pointer"
             >
-              <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer" onClick={handleQuoteLinkClick}>
+              <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer">
                 🛡️ Cotizá tu seguro
               </a>
             </Button>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 asChild
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base cursor-pointer"
               >
-                <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer" onClick={handleQuoteLinkClick}>
+                <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer">
                   🛡️ Cotizá tu seguro
                 </a>
               </Button>
