@@ -55,11 +55,13 @@ const Hero = () => {
           >
             <Button 
               size="lg"
-              onClick={() => window.open("https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/", "_blank")}
+              asChild
               className="bg-white text-primary hover:bg-white/90 shadow-strong text-lg px-8 py-6 h-auto font-semibold group cursor-pointer"
             >
-              Cotizá tu seguro
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-smooth" />
+              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+                Cotizá tu seguro
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-smooth" />
+              </a>
             </Button>
             
             <Button 
