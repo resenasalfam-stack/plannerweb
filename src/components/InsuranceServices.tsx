@@ -94,10 +94,12 @@ const InsuranceServices = () => {
           <div className="text-center">
             <Button 
               size="lg"
-              onClick={() => window.open("https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/", "_blank")}
+              asChild
               className="shadow-medium text-lg px-8 py-6 h-auto font-semibold cursor-pointer"
             >
-              Solicitá cotización personalizada
+              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+                Solicitá cotización personalizada
+              </a>
             </Button>
           </div>
         </ScrollReveal>

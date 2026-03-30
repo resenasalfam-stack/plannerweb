@@ -43,11 +43,13 @@ const Navbar = () => {
               Contacto
             </button>
             <Button 
-              variant="default" 
-              onClick={() => window.open("https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/", "_blank")}
+              variant="default"
+              asChild
               className="shadow-medium bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base px-6 animate-pulse hover:animate-none cursor-pointer"
             >
-              🛡️ Cotizá tu seguro
+              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+                🛡️ Cotizá tu seguro
+              </a>
             </Button>
           </div>
 
@@ -79,11 +81,13 @@ const Navbar = () => {
                 Contacto
               </button>
               <Button 
-                variant="default" 
-                onClick={() => window.open("https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/", "_blank")}
+                variant="default"
+                asChild
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base cursor-pointer"
               >
-                🛡️ Cotizá tu seguro
+                <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+                  🛡️ Cotizá tu seguro
+                </a>
               </Button>
             </div>
           </div>
