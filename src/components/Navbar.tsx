@@ -42,10 +42,9 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("contacto")} className="text-foreground hover:text-primary transition-smooth font-medium">
               Contacto
             </button>
-            <Button asChild variant="default" className="shadow-medium">
-              <a href="https://wa.me/5491136808630" target="_blank" rel="noopener noreferrer">
-                <Phone className="w-4 h-4 mr-2" />
-                WhatsApp
+            <Button asChild variant="default" className="shadow-medium bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base px-6 animate-pulse hover:animate-none">
+              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+                🛡️ Cotizá tu seguro
               </a>
             </Button>
           </div>
