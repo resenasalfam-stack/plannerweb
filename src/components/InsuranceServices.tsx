@@ -98,7 +98,7 @@ const InsuranceServices = () => {
               asChild
               className="shadow-medium text-lg px-8 py-6 h-auto font-semibold cursor-pointer"
             >
-              <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+              <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer" onClick={handleQuoteLinkClick}>
                 Solicitá cotización personalizada
               </a>
             </Button>
