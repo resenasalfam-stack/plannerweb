@@ -86,7 +86,7 @@ const Navbar = () => {
                 asChild
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base cursor-pointer"
               >
-                <a href="https://sistema.woker.ar/solicitar-cotizacion/plannerseguros/" target="_blank" rel="noopener noreferrer">
+                <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer" onClick={handleQuoteLinkClick}>
                   🛡️ Cotizá tu seguro
                 </a>
               </Button>
