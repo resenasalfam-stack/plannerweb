@@ -48,7 +48,7 @@ const Navbar = () => {
               asChild
               className="shadow-medium bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base px-6 animate-pulse hover:animate-none cursor-pointer"
             >
-              <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer">
+              <a href={QUOTE_URL} target="_top" rel="noopener noreferrer">
                 🛡️ Cotizá tu seguro
               </a>
             </Button>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 asChild
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-base cursor-pointer"
               >
-                <a href={QUOTE_URL} target="_blank" rel="noopener noreferrer">
+                <a href={QUOTE_URL} target="_top" rel="noopener noreferrer">
                   🛡️ Cotizá tu seguro
                 </a>
               </Button>
