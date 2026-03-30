@@ -18,6 +18,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <InsuranceServices />
+      <QuoteSection />
       <InsurancePartners />
       <ADTAlliance />
       <ProducersSection />
