@@ -44,7 +44,7 @@ const Footer = () => {
               onClick={scrollToTop}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-strong hover:shadow-medium transition-smooth"
+              className="w-10 h-10 rounded-full bg-primary-foreground/20 text-primary-foreground flex items-center justify-center shadow-strong hover:bg-primary-foreground/30 transition-smooth"
               aria-label="Volver arriba"
             >
               <ArrowUp className="w-5 h-5" />
