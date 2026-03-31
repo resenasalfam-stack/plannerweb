@@ -125,7 +125,7 @@ const Footer = () => {
 
             {/* Social column */}
             <div>
-              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
+              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-sky-300">
                 Seguinos
               </h3>
               <div className="flex gap-3 mb-6">
