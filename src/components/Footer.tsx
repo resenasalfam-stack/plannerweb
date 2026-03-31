@@ -111,7 +111,7 @@ const Footer = () => {
                   <span>Buenos Aires, Argentina</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Mail className="w-4 h-4 mt-0.5 text-accent shrink-0" />
+                  <Mail className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
                   <a href="mailto:info@plannerseguros.com" className="hover:text-primary-foreground transition-smooth">
                     info@plannerseguros.com
                   </a>
