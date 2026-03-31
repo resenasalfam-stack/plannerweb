@@ -84,6 +84,7 @@ const Footer = () => {
               <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
                 Navegación
               </h3>
+
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.id}>
