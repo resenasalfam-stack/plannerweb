@@ -107,7 +107,7 @@ const Footer = () => {
               </h3>
               <ul className="space-y-4 text-sm text-primary-foreground/70">
                 <li className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 mt-0.5 text-accent shrink-0" />
+                  <MapPin className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
                   <span>Buenos Aires, Argentina</span>
                 </li>
                 <li className="flex items-start gap-3">
