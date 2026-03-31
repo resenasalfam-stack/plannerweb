@@ -92,7 +92,7 @@ const Footer = () => {
                       onClick={() => scrollTo(link.id)}
                       className="text-primary-foreground/70 hover:text-primary-foreground hover:translate-x-1 transition-smooth text-sm inline-flex items-center gap-2 group"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent/50 group-hover:bg-accent transition-smooth" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-sky-400/50 group-hover:bg-sky-300 transition-smooth" />
                       {link.label}
                     </button>
                   </li>
