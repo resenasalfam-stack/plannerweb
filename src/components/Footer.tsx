@@ -102,7 +102,7 @@ const Footer = () => {
 
             {/* Contact info column */}
             <div>
-              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
+              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-sky-300">
                 Contacto
               </h3>
               <ul className="space-y-4 text-sm text-primary-foreground/70">
