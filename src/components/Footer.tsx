@@ -81,7 +81,7 @@ const Footer = () => {
 
             {/* Links column */}
             <div>
-              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
+              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-sky-300">
                 Navegación
               </h3>
 
