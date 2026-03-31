@@ -44,7 +44,7 @@ const Footer = () => {
               onClick={scrollToTop}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 rounded-full bg-accent text-accent-foreground flex items-center justify-center shadow-strong hover:shadow-medium transition-smooth"
+              className="w-10 h-10 rounded-full bg-primary-foreground/20 text-primary-foreground flex items-center justify-center shadow-strong hover:bg-primary-foreground/30 transition-smooth"
               aria-label="Volver arriba"
             >
               <ArrowUp className="w-5 h-5" />
@@ -81,9 +81,10 @@ const Footer = () => {
 
             {/* Links column */}
             <div>
-              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
+              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-sky-300">
                 Navegación
               </h3>
+
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.id}>
@@ -91,7 +92,7 @@ const Footer = () => {
                       onClick={() => scrollTo(link.id)}
                       className="text-primary-foreground/70 hover:text-primary-foreground hover:translate-x-1 transition-smooth text-sm inline-flex items-center gap-2 group"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent/50 group-hover:bg-accent transition-smooth" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-sky-400/50 group-hover:bg-sky-300 transition-smooth" />
                       {link.label}
                     </button>
                   </li>
@@ -101,22 +102,22 @@ const Footer = () => {
 
             {/* Contact info column */}
             <div>
-              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
+              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-sky-300">
                 Contacto
               </h3>
               <ul className="space-y-4 text-sm text-primary-foreground/70">
                 <li className="flex items-start gap-3">
-                  <MapPin className="w-4 h-4 mt-0.5 text-accent shrink-0" />
+                  <MapPin className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
                   <span>Buenos Aires, Argentina</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Mail className="w-4 h-4 mt-0.5 text-accent shrink-0" />
+                  <Mail className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
                   <a href="mailto:info@plannerseguros.com" className="hover:text-primary-foreground transition-smooth">
                     info@plannerseguros.com
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 mt-0.5 text-accent shrink-0" />
+                  <Clock className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
                   <span>Lun a Vie: 9:00 – 18:00 hs</span>
                 </li>
               </ul>
@@ -124,7 +125,7 @@ const Footer = () => {
 
             {/* Social column */}
             <div>
-              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-accent">
+              <h3 className="font-heading font-bold text-base uppercase tracking-wider mb-5 text-sky-300">
                 Seguinos
               </h3>
               <div className="flex gap-3 mb-6">
@@ -134,7 +135,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-primary-foreground/10 border border-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-smooth group"
+                    className="w-10 h-10 rounded-full bg-primary-foreground/10 border border-primary-foreground/10 flex items-center justify-center hover:bg-sky-400/20 hover:text-sky-300 hover:border-sky-400/40 transition-smooth group"
                     aria-label={social.label}
                   >
                     <social.icon className="w-4 h-4 group-hover:scale-110 transition-smooth" />
