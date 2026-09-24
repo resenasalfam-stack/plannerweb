@@ -319,7 +319,7 @@ const ContactSection = () => {
                     href="mailto:administracion@plannerseguros.com"
                     className="text-primary hover:underline"
                   >
-                    administracion@plannerseguros.com
+                    administracion@<wbr />plannerseguros.com
                   </a>
                 ),
               },
@@ -351,7 +351,7 @@ const ContactSection = () => {
                       <item.icon className="w-6 h-6" />
                     </div>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="font-bold text-lg mb-2">{item.title}</h3>
                     {item.content}
                   </div>

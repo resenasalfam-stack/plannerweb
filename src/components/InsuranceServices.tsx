@@ -96,7 +96,7 @@ const InsuranceServices = () => {
             <Button 
               size="lg"
               asChild
-              className="shadow-medium text-lg px-8 py-6 h-auto font-semibold cursor-pointer"
+              className="shadow-medium text-base md:text-lg px-6 md:px-8 py-6 h-auto max-w-full whitespace-normal font-semibold cursor-pointer"
             >
               <a href={QUOTE_URL} target="_top" rel="noopener noreferrer">
                 Solicitá cotización personalizada

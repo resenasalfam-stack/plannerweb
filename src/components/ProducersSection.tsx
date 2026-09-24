@@ -144,7 +144,7 @@ const ProducersSection = () => {
             <Button 
               size="lg"
               asChild
-              className="bg-white text-primary hover:bg-white/90 shadow-xl text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 h-auto font-bold group"
+              className="bg-white text-primary hover:bg-white/90 shadow-xl text-base md:text-xl px-6 md:px-12 py-6 md:py-8 h-auto max-w-full whitespace-normal font-bold group"
             >
               <a 
                 href="https://wa.me/5491136808630?text=Hola,%20quiero%20ser%20parte%20de%20Planner%20como%20productor" 
