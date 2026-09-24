@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Linkedin, Mail, MapPin, Clock, ArrowUp } from "lucide-react";
-import logoPlanner from "@/assets/logo-planner.png";
+import logoPlanner from "@/assets/logo-planner-light.png";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { QUOTE_URL } from "@/lib/quote-link";
@@ -63,8 +63,8 @@ const Footer = () => {
             <div className="lg:col-span-1">
               <img
                 src={logoPlanner}
-                alt="Planner Organización de Seguros"
-                className="h-16 w-auto mb-5 brightness-0 invert"
+                alt="Planner Broker de Seguros"
+                className="h-14 w-auto mb-5"
               />
               <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
                 Soluciones integrales en seguros con respaldo jurídico ADT. Más de 15 aseguradoras líderes a tu servicio.
@@ -155,7 +155,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="border-t border-primary-foreground/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/50"
           >
-            <p>© {currentYear} Planner Organización de Seguros. Todos los derechos reservados.</p>
+            <p>© {currentYear} Planner Broker de Seguros S.A. Todos los derechos reservados.</p>
             <p>
               Diseñado con dedicación en Buenos Aires 🇦🇷
             </p>

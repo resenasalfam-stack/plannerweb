@@ -22,8 +22,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <img 
               src={logoPlanner} 
-              alt="Planner Organización de Seguros" 
-              className="h-20 w-auto"
+              alt="Planner Broker de Seguros" 
+              className="h-12 md:h-14 w-auto"
             />
           </div>
 

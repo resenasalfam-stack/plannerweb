@@ -45,7 +45,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg mb-10 text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
-            Planner Organización de Seguros forma parte de <strong>Alfam Group</strong>, un holding empresarial argentino con presencia en seguros, servicios legales, construcción, retail, comercio exterior y consultoría.
+            Planner Broker de Seguros forma parte de <strong>Alfam Group</strong>, un holding empresarial argentino con presencia en seguros, servicios legales, construcción, retail, comercio exterior y consultoría.
           </motion.p>
           
           <motion.div
