@@ -132,6 +132,14 @@ const ContactSection = () => {
       return;
     }
 
+    // Notify KITT (Telegram). Fire-and-forget: never blocks the user flow
+    fetch("https://ia.trivanceconsultora.com/api/notify/lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(sanitizedData),
+      keepalive: true,
+    }).catch(() => {});
+
     // Build WhatsApp message
     const whatsappMessage = [
       `Hola, mi nombre es ${sanitizedData.name}`,
