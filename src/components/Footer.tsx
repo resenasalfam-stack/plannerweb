@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Linkedin, Mail, MapPin, Clock, ArrowUp } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Mail, MapPin, ArrowUp } from "lucide-react";
 import logoPlanner from "@/assets/logo-planner-light.png";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -115,10 +115,6 @@ const Footer = () => {
                   <a href="mailto:info@plannerseguros.com" className="hover:text-primary-foreground transition-smooth">
                     info@plannerseguros.com
                   </a>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
-                  <span>Lun a Vie: 9:00 – 18:00 hs</span>
                 </li>
               </ul>
             </div>

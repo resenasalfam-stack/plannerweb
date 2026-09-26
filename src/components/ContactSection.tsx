@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -335,11 +335,6 @@ const ContactSection = () => {
                 icon: MapPin,
                 title: "Ubicación",
                 content: <p className="text-muted-foreground">Buenos Aires, Argentina</p>,
-              },
-              {
-                icon: Clock,
-                title: "Horario",
-                content: <p className="text-muted-foreground">Lunes a Viernes de 9 a 18 hs</p>,
               },
             ].map((item, index) => (
               <motion.div
