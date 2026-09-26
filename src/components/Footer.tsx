@@ -85,12 +85,12 @@ const Footer = () => {
                 Navegación
               </h3>
 
-              <ul className="space-y-3">
+              <ul className="space-y-1">
                 {links.map((link) => (
                   <li key={link.id}>
                     <button
                       onClick={() => scrollTo(link.id)}
-                      className="text-primary-foreground/70 hover:text-primary-foreground hover:translate-x-1 transition-smooth text-sm inline-flex items-center gap-2 group"
+                      className="text-primary-foreground/70 hover:text-primary-foreground hover:translate-x-1 transition-smooth text-sm inline-flex items-center gap-2 py-1.5 group"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-sky-400/50 group-hover:bg-sky-300 transition-smooth" />
                       {link.label}
@@ -112,7 +112,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <Mail className="w-4 h-4 mt-0.5 text-sky-400 shrink-0" />
-                  <a href="mailto:info@plannerseguros.com" className="hover:text-primary-foreground transition-smooth">
+                  <a href="mailto:info@plannerseguros.com" className="hover:text-primary-foreground transition-smooth inline-block py-1 -my-1">
                     info@plannerseguros.com
                   </a>
                 </li>

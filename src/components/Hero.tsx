@@ -5,7 +5,7 @@ import { QUOTE_URL } from "@/lib/quote-link";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-28 md:pt-20 md:pb-0">
       <div className="absolute inset-0 gradient-hero opacity-95" />
       
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMtMy4zMTQgMC02IDIuNjg2LTYgNnMyLjY4NiA2IDYgNiA2LTIuNjg2IDYtNi0yLjY4Ni02LTYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9nPjwvc3ZnPg==')] opacity-10" />
@@ -16,16 +16,16 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm mb-8"
+            className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/10 backdrop-blur-sm mb-6 md:mb-8"
           >
-            <Shield className="w-10 h-10 text-white" />
+            <Shield className="w-8 h-8 md:w-10 md:h-10 text-white" />
           </motion.div>
           
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-5 md:mb-6 leading-tight"
           >
             Protegemos lo que más valorás
           </motion.h1>
@@ -43,7 +43,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-lg mb-10 text-white/80 max-w-3xl mx-auto leading-relaxed"
+            className="text-base md:text-lg mb-8 md:mb-10 text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
             Planner Broker de Seguros forma parte de <strong>Alfam Group</strong>, un holding empresarial argentino con presencia en seguros, servicios legales, construcción, retail, comercio exterior y consultoría.
           </motion.p>
@@ -57,7 +57,7 @@ const Hero = () => {
             <Button 
               size="lg"
               asChild
-              className="bg-white text-primary hover:bg-white/90 shadow-strong text-lg px-8 py-6 h-auto font-semibold group cursor-pointer"
+              className="w-full max-w-xs sm:w-auto bg-white text-primary hover:bg-white/90 shadow-strong text-base md:text-lg px-8 py-5 md:py-6 h-auto font-semibold group cursor-pointer"
             >
               <a href={QUOTE_URL} target="_top" rel="noopener noreferrer">
                 Cotizá tu seguro
@@ -69,7 +69,7 @@ const Hero = () => {
               size="lg"
               onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
               variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary shadow-medium text-lg px-8 py-6 h-auto font-semibold"
+              className="w-full max-w-xs sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary shadow-medium text-base md:text-lg px-8 py-5 md:py-6 h-auto font-semibold"
             >
               Contactá un asesor
             </Button>

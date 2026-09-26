@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground p-2 -mr-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -65,20 +65,20 @@ const Navbar = () => {
 
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection("inicio")} className="text-foreground hover:text-primary transition-smooth font-medium">
+            <div className="flex flex-col space-y-2">
+              <button onClick={() => scrollToSection("inicio")} className="text-foreground hover:text-primary transition-smooth font-medium py-2">
                 Inicio
               </button>
-              <button onClick={() => scrollToSection("seguros")} className="text-foreground hover:text-primary transition-smooth font-medium">
+              <button onClick={() => scrollToSection("seguros")} className="text-foreground hover:text-primary transition-smooth font-medium py-2">
                 Seguros
               </button>
-              <button onClick={() => scrollToSection("productores")} className="text-foreground hover:text-primary transition-smooth font-medium">
+              <button onClick={() => scrollToSection("productores")} className="text-foreground hover:text-primary transition-smooth font-medium py-2">
                 Productores
               </button>
-              <button onClick={() => scrollToSection("nosotros")} className="text-foreground hover:text-primary transition-smooth font-medium">
+              <button onClick={() => scrollToSection("nosotros")} className="text-foreground hover:text-primary transition-smooth font-medium py-2">
                 Nosotros
               </button>
-              <button onClick={() => scrollToSection("contacto")} className="text-foreground hover:text-primary transition-smooth font-medium">
+              <button onClick={() => scrollToSection("contacto")} className="text-foreground hover:text-primary transition-smooth font-medium py-2">
                 Contacto
               </button>
               <Button 
